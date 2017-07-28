@@ -66,6 +66,14 @@ app.get('/about',(req,res) => {
 	});
 });
 
+app.get('/projects',(req,res) => {
+	//res.send('About page');
+	res.render('project.hbs', {
+		pageTitle: 'Project Page',
+	});
+});
+
+
 app.get('/bad',(req,res) => {
 	res.send({
 		errorMessage: 'Unable to process this request',
