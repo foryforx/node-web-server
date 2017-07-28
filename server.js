@@ -25,12 +25,12 @@ app.use((req, res, next) =>{
 	next();
 });
 
-app.use((req, res, next) => {
-	res.render('maintenance.hbs',{
-		pageTitle: 'Maintenance',
-		welcomeMessage: 'We will be right back',
-	});
-});
+// app.use((req, res, next) => {
+	// res.render('maintenance.hbs',{
+		// pageTitle: 'Maintenance',
+		// welcomeMessage: 'We will be right back',
+	// });
+// });
 
 //middleware
 app.use(express.static(__dirname+'/public'));
